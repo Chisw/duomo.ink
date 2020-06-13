@@ -1,0 +1,25 @@
+.tian-grid {
+  border: 1px solid silver;
+}
+
+.tian-grid + .tian-grid {
+  margin-left: 4px;
+}
+
+.tian-grid::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  border-top: 1px solid silver;
+  width: 100%;
+}
+
+.tian-grid::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  border-left: 1px solid silver;
+  height: 100%;
+}

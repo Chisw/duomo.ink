@@ -1,15 +1,24 @@
 import React from 'react'
-import logo from './images/logo.png'
+import { BrowserRouter as Router } from 'react-router-dom'
 import './css/index.css'
-import { Button } from 'evergreen-ui'
+import Bar from './components/Bar'
+import Home from './components/pages/Home'
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <img src={logo} className="w-12" alt="logo" />
-      <Button>a</Button>
-    </div>
+    <Router>
+      <div className="fixed inset-0 bg-gray-200">
+        <div
+          className="mx-auto px-6 pt-20 w-full bg-white overflow-y-auto"
+          style={{
+            height: '100vh',
+            maxWidth: 640,
+          }}
+        >
+          <Home />
+          <Bar />
+        </div>
+      </div>
+    </Router>
   )
 }
-
-export default App
