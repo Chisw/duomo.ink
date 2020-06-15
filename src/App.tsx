@@ -1,7 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import './css/index.css'
-import Bar from './components/Bar'
+import Bar from './components/layout/Bar'
+import Header from './components/layout/Header'
 import Home from './components/pages/Home'
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
             maxWidth: 640,
           }}
         >
+          <Header />
           <Home />
           <Bar />
         </div>

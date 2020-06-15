@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { ZI } from '../Template'
 
 export default function Home() {

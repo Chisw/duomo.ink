@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../images/logo-text.png'
-import { IconButton, Icon } from 'evergreen-ui'
+import logo from '../../images/logo-text.png'
+import { IconButton } from 'evergreen-ui'
 import { NavLink } from 'react-router-dom'
 
 export default function Bar() {
@@ -23,7 +23,7 @@ export default function Bar() {
               }}
             />
           </div>
-          {/* <div className="flex justify-center">
+          <div className="flex justify-center">
             <NavLink to="/search">
               <IconButton appearance="minimal" icon="search" />
             </NavLink>
@@ -32,7 +32,7 @@ export default function Bar() {
             <NavLink to="/user">
               <IconButton appearance="minimal" icon="user" />
             </NavLink>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
