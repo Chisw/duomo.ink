@@ -8,18 +8,19 @@
   display: block;
   position: fixed;
   width: 100%;
-  height: 48px;
   z-index: 11;
 }
 
 .duomo-body::before {
   top: 72px;
+  height: 48px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .duomo-body::after {
   bottom: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  height: 128px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0));
 }
 
 @keyframes animation-drop {
@@ -28,15 +29,15 @@
   }
 
   50% {
-    transform: translateY(48px);
+    transform: translateY(64px);
   }
 
   51% {
-    transform: translateY(-48px);
+    transform: translateY(-64px) scale(.01);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 

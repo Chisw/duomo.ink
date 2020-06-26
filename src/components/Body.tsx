@@ -8,6 +8,7 @@ export default function Home() {
   const [isClicked, setIsClicked] = useState(false)
 
   const handleClicked = () => {
+    if (isClicked) return
     setIsClicked(true)
     setTimeout(() => setIsClicked(false), 640)
   }
@@ -32,12 +33,12 @@ export default function Home() {
         </Center>
         <div
           className={`fixed z-20 -ml-8 w-16 h-16 rounded-full flex justify-center items-center cursor-pointer
-          transition duration-200 transform active:scale-110 shadow-lg select-none overflow-hidden`}
+          transition duration-100 transform shadow-md hover:shadow-lg select-none overflow-hidden`}
           style={{
-            bottom: '1rem',
+            bottom: '2rem',
             left: '50%',
-            backgroundColor: 'rgba(255, 255, 255, .9)',
-            backdropFilter: 'blur(5px)',
+            background: 'linear-gradient(180deg, rgba(230, 230, 230, .9), rgba(255, 255, 255, .9))',
+            backdropFilter: 'blur(2px)',
           }}
           onClick={handleClicked}
         >
