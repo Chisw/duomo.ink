@@ -1,8 +1,14 @@
 module.exports = {
   purge: ['./src/**/*.tsx'],
   theme: {
-    extend: {},
+    extend: {
+      rotate: {
+        '360': '360deg',
+      },
+    },
   },
-  variants: {},
+  variants: {
+    backgroundColor: ['hover', 'active'],
+  },
   plugins: [],
 }
