@@ -43,10 +43,10 @@ module.exports = {
     extend: {
       width: Object.assign({
 
-      }, extra),
+      }, extra, percent),
       height: Object.assign({
 
-      }, extra),
+      }, extra, percent),
       minWidth: Object.assign({
 
       }, base, extra, percent),

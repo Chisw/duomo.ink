@@ -39,7 +39,7 @@ export default function Home() {
           style={{
             bottom: '2rem',
             left: '50%',
-            background: 'linear-gradient(180deg, rgba(230, 230, 230, .9), rgba(255, 255, 255, .9))',
+            background: 'linear-gradient(180deg, rgba(230, 230, 230, .9), rgba(255, 255, 255, 1))',
             backdropFilter: 'blur(2px)',
           }}
           onClick={handleClicked}

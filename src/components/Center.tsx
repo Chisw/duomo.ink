@@ -25,7 +25,7 @@ export default function Center(props: CenterProps) {
           {bgNode}
         </div>
       )}
-      <div className={`${innerClassName} relative z-10 max-w-3xl px-4 md:px-8 mx-auto`}>
+      <div className={`${innerClassName} relative z-10 max-w-xl px-4 md:px-8 mx-auto`}>
         {children}
       </div>
     </div>

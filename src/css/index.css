@@ -6,4 +6,5 @@
 @import "~tailwindcss/components.css";
 @import "~tailwindcss/utilities.css";
 
+@import "./tailwind.ex.css";
 @import "./base.css";
