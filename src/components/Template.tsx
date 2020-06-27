@@ -1,5 +1,5 @@
 import React from 'react'
-import { Badge } from 'evergreen-ui'
+import { Tag } from '@blueprintjs/core'
 
 function Grid({ zi }: { zi: string }) {
   return (
@@ -41,21 +41,21 @@ export function ZI (props: ZIProps) {
         <div className="ml-4 flex-grow">
           <div className="flex mb-2">
             <div className="w-1/2">
-              <Badge color="neutral">拼音</Badge>
+              <Tag minimal>拼音</Tag>
               <span className="ml-2 text-xs">{pinyin}</span>
             </div>
             <div className="w-1/2">
-              <Badge color="neutral">繁体</Badge>
+              <Tag minimal>繁体</Tag>
               <span className="ml-2 text-xs">{oldword}</span>
             </div>
           </div>
           <div className="flex">
             <div className="w-1/2">
-              <Badge color="neutral">笔画</Badge>
+              <Tag minimal>笔画</Tag>
               <span className="ml-2 text-xs">{strokes}</span>
             </div>
             <div className="w-1/2">
-              <Badge color="neutral">部首</Badge>
+              <Tag minimal>部首</Tag>
               <span className="ml-2 text-xs">{radicals}</span>
             </div>
           </div>
