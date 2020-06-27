@@ -7,6 +7,13 @@ const Settings = React.lazy(() => import('./Settings'))
 const User = React.lazy(() => import('./User'))
 const About = React.lazy(() => import('./About'))
 
+const moreList = [
+  { title: '墨库', icon: 'tint', component: <InkPool /> },
+  { title: '我的', icon: 'user', component: <User /> },
+  { title: '设置', icon: 'settings', component: <Settings /> },
+  { title: '关于', icon: 'info-sign', component: <About /> },
+]
+
 export default function Bar() {
 
   const [open, setOpen] = useState(false)
@@ -35,25 +42,20 @@ export default function Bar() {
       >
         <div className="absolute inset-0">
           <div className="relative z-10 px-4 flex justify-between items-center select-none" style={{ height: 64 }}>
-            {['墨库', '设置', '我的', '关于'].map((name, index) => (
+            {moreList.map(({ title, icon }, index) => (
               <Button
                 key={index}
                 minimal
                 active={activeIndex === index}
                 onClick={() => setActiveIndex(index)}
-                icon={['tint', 'settings', 'user', 'info-sign'][index] as IconName}
-                text={name}
+                icon={icon as IconName}
+                text={title}
               />
             ))}
           </div>
           <div className="absolute inset-0 p-4 pt-0 overflow-y-auto" style={{ top: 64 }}>
             <Suspense fallback={<div className="absolute inset-0 flex justify-center items-center"><Spinner /></div>}>
-              {[
-                <InkPool />,
-                <Settings />,
-                <User />,
-                <About />,
-              ][activeIndex]}
+              {moreList[activeIndex].component}
             </Suspense>
           </div>
         </div>

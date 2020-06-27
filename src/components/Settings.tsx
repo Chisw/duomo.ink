@@ -7,7 +7,7 @@ export default function Settings() {
       <div>
         <div className="py-4 border-t flex justify-between items-center">
           <div>
-            <span>墨滴音效</span>
+            <span>滴落音效</span>
           </div>
           <Switch large alignIndicator="right" className="m-0 inline-block" />
         </div>
@@ -30,7 +30,7 @@ export default function Settings() {
         <div className="py-4 border-t flex justify-between items-center">
           <div>
             <span>每日目标滴数</span>
-            <p className="mt-1 text-gray-500 text-xs">大约 4 年 3 个月可以滴完</p>
+            <p className="mt-1 text-gray-500 text-xs">厉害，大约 4 年 3 个月可以滴完</p>
           </div>
           <ButtonGroup>
             <Button
@@ -44,6 +44,22 @@ export default function Settings() {
               icon="plus"
             />
           </ButtonGroup>
+        </div>
+
+        <div className="py-4 border-t flex justify-between items-center">
+          <div>
+            <span>安装字体包</span>
+            <p className="mt-1 text-gray-500 text-xs">楷体、仿宋(17.5 MB)</p>
+          </div>
+          <Button icon="download" />
+        </div>
+
+        <div className="py-4 border-t flex justify-between items-center">
+          <div>
+            <span>清空所有数据</span>
+            <p className="mt-1 text-gray-500 text-xs">清除墨库、字体以及用户数据</p>
+          </div>
+          <Button intent="danger" icon="trash" />
         </div>
 
       </div>
