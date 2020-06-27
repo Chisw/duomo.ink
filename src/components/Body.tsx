@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { ZI } from './Template'
 import Center from './Center'
 import drip from '../images/drip.svg'
+import { AUDIO } from '../utils/utils'
 
 export default function Home() {
 
@@ -11,6 +12,7 @@ export default function Home() {
     if (isClicked) return
     setIsClicked(true)
     setTimeout(() => setIsClicked(false), 640)
+    AUDIO.play('audio-drop')
   }
 
   return (
