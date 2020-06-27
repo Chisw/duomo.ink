@@ -16,12 +16,17 @@ export default function InkPool() {
         {inkList.map(({ title, size, count, status }, index) => (
           <div
             key={index}
-            className={`mt-4 p-2 flex items-center border rounded`}
+            className={`mb-4 p-2 flex items-center border rounded`}
           >
-            <p className="text-2xl flex-grow">
-              {title}
-              <span className="ml-2 text-xs text-gray-700">{count}滴({size}MB)</span>
-            </p>
+            <div className="flex-grow flex items-center">
+              <span className="text-3xl">
+                {title}
+              </span>
+              <span className="ml-2 text-xs text-gray-700">
+                {count} 滴<br/>
+                {size} MB
+              </span>
+            </div>
             <div>
               <Button
                 small
@@ -32,7 +37,7 @@ export default function InkPool() {
             </div>
           </div>
         ))}
-        <div className="mt-6 text-xs text-center text-gray-500">
+        <div className="text-xs text-center text-gray-500">
           数据来源于网络
         </div>
       </div>
