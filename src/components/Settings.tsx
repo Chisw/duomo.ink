@@ -5,6 +5,14 @@ export default function Settings() {
   return (
     <>
       <div>
+
+        <div className="py-4 border-t flex justify-between items-center">
+          <div>
+            <span>深色模式</span>
+          </div>
+          <Switch large alignIndicator="right" className="m-0 inline-block" />
+        </div>
+
         <div className="py-4 border-t flex justify-between items-center">
           <div>
             <span>滴落音效</span>

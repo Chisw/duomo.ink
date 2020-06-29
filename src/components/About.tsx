@@ -14,7 +14,9 @@ export default function About() {
         </div>
         <p className="mt-2 mb-2 text-xs">https://duomo.ink</p>
         <Button text="复制链接" onClick={() => copy('https://duomo.ink')} />
-        <p className="mt-16 text-gray-400 text-xs">i@jisuowei.com</p>
+        <div className="mt-16">
+          <a href="https://jisuowei.com" target="_blank" className="text-gray-400 text-xs">jisuowei.com</a>
+        </div>
       </div>
     </>
   )
