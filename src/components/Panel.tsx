@@ -30,9 +30,9 @@ export default function Panel(props: PanelProps) {
     <>
       <Drawer
         position="bottom"
-        className="rounded-t-lg max-w-lg mx-auto"
+        className="rounded-t-lg max-w-md mx-auto"
         backdropClassName="bg-hazy-25"
-        style={{ minHeight: '80vh' }}
+        style={{ minHeight: '72vh' }}
         isOpen={isOpen}
         onClose={onClose}
       >
