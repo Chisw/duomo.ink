@@ -28,8 +28,12 @@
     transform: translateY(0);
   }
 
-  50% {
+  49% {
     transform: translateY(64px);
+  }
+
+  50% {
+    transform: translateX(200px) translateY(-64px);
   }
 
   51% {
@@ -42,7 +46,7 @@
 }
 
 .animation-drop {
-  animation: animation-drop .6s ease-in-out;
+  animation: animation-drop .64s ease-in-out;
 }
 
 .tian-grid {
