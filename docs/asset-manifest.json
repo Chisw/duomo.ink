@@ -2,14 +2,14 @@
   "files": {
     "main.css": "/static/css/main.05878aae.chunk.css",
     "main.js": "/static/js/main.2c5a5bff.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.509a1599.js",
+    "runtime-main.js": "/static/js/runtime-main.f00f47bb.js",
     "static/js/2.38207591.chunk.js": "/static/js/2.38207591.chunk.js",
-    "static/css/3.cab3e5df.chunk.css": "/static/css/3.cab3e5df.chunk.css",
+    "static/css/3.3f508a31.chunk.css": "/static/css/3.3f508a31.chunk.css",
     "static/js/3.88312509.chunk.js": "/static/js/3.88312509.chunk.js",
     "static/js/4.83f4c3ca.chunk.js": "/static/js/4.83f4c3ca.chunk.js",
-    "static/js/5.4d7e0763.chunk.js": "/static/js/5.4d7e0763.chunk.js",
+    "static/js/5.c4b57b34.chunk.js": "/static/js/5.c4b57b34.chunk.js",
     "static/js/6.f7707e62.chunk.js": "/static/js/6.f7707e62.chunk.js",
-    "static/js/7.0b3db5cd.chunk.js": "/static/js/7.0b3db5cd.chunk.js",
+    "static/js/7.c0712705.chunk.js": "/static/js/7.c0712705.chunk.js",
     "index.html": "/index.html",
     "service-worker.js": "/service-worker.js",
     "static/js/2.38207591.chunk.js.LICENSE.txt": "/static/js/2.38207591.chunk.js.LICENSE.txt",
@@ -21,8 +21,8 @@
     "workbox-dce9cbc5.js": "/workbox-dce9cbc5.js"
   },
   "entrypoints": [
-    "static/js/runtime-main.509a1599.js",
-    "static/css/3.cab3e5df.chunk.css",
+    "static/js/runtime-main.f00f47bb.js",
+    "static/css/3.3f508a31.chunk.css",
     "static/js/3.88312509.chunk.js",
     "static/css/main.05878aae.chunk.css",
     "static/js/main.2c5a5bff.chunk.js"
