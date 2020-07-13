@@ -12,7 +12,7 @@ export default function InkPool() {
         {INK_LIST.map(({ title, size, count, status }, index) => (
           <div
             key={index}
-            className={`mb-4 p-2 flex items-center border rounded`}
+            className={`mb-4 p-4 flex items-center border-2 rounded-full`}
           >
             <div className="flex-grow flex items-center">
               <span className="text-3xl">

@@ -101,15 +101,23 @@ export default function User() {
         {INK_LIST.map(({ title, count }, index) => (
           <div
             key={index}
-            className="mb-4 px-2 w-1/2"
+            className="mb-4 px-2 w-1/4"
           >
-            <div className={`p-2 border rounded`}>
-              <span className="text-xl">
-                {title}
-              </span>
-              <p className="text-xs text-gray-700">
-                已吸纳 {Math.floor(Math.random()*10000)}/{count} 滴<br />
-              </p>
+            <div className={`relative h-64 p-2 border-2 rounded-full flex flex-wrap justify-center items-center text-center`}>
+              <div className="absolute z-0 inset-0 bg-gray-100 border border-white rounded-full overflow-hidden">
+                <div
+                  className="absolute right-0 bottom-0 left-0 bg-gray-500 rounded-t"
+                  style={{ height: Math.random() * 100 + '%' }}
+                />
+              </div>
+              <div className="relative z-10">
+                <div className="text-xl">
+                  {title}
+                </div>
+                <div className="text-xs text-gray-700">
+                  {Math.floor(Math.random() * 10000)}
+                </div>
+              </div>
             </div>
           </div>
         ))}
